@@ -12,7 +12,7 @@ You need to :
 * Install Allure 2.9.0
 * Install docker
 * Install docker-compose
-* Install make
+* Install make: sudo apt install make
 
 The workflow start from cloning **BP-Init** repository.
 ## BP-Init
@@ -73,7 +73,18 @@ To be able to deploy you need to configure the following environment variables:
 | ------------------------ |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | DJANGO_SECRET_KEY           | Django secret key consisting multiple characters.               | a7g1no9a2dhcosard72(ale66u5pg4stf9#b97maiccou6sekk                                         |
 | TESTING_HOST_IP | Ip address of your linux instance                               | 192.168. 1.1                                                                               |
-| TESTING_SSH_PRIVATE_KEY | Privat ssh key which is needed to make ssh tunel.               |                                                                                            |
+| TESTING_SSH_PRIVATE_KEY | Privat ssh key which is needed to make ssh tunel.               |       -----BEGIN RSA PRIVATE KEY-----                                                                                     |
+| PRODUCTION_HOST_IP | Ip address of your linux instance                               | 192.168. 1.1                                                                               |
+| PRODUCTION_SSH_PRIVATE_KEY | Privat ssh key which is needed to make ssh tunel.               |      -----BEGIN RSA PRIVATE KEY-----                                                                                      |
+
+I encourage You to make 2 separate environments for testing and production and pass there specific env vars.  
+
+To configure new environment:
+https://github.com/Filip-231/BP-Test-Django/settings/environments/new
+
+
+In Github You can add a protection rule with reviewer, but the repository need to be visible.
+
 ### Features
 To see all available commands you can invoke:
 ``make``
@@ -126,13 +137,13 @@ https://github.com/Filip-231/BP-Test-Django/actions
   * format - checks if code is formatted
   * lint - runs all static code checkers with prospector
   * docker - build and ups docker image
-* CD - runs manually
-  * bump_version - bump version of release and push a tag to repo
-  * publish_release - publishing new release
+* CD - manually triggered automatic deploys to Oracle cloud environments and GH releases
+  * Deploy Testing - need to be successfully deployed testing environment
+  * bump_version - bump version of release and push a tag to repo - need to be reviewed to start
+  * publish_release - publishing new release in GH releases
+  * Deploy Production - after review and approve allowed user, code can be deployed to production
 * CI/CD - runs manually, includes CI and CD pipelines connected
-* Deploy - automatic deploys to Oracle cloud environments
-  * Testing - need to be successfully deployed testing environment
-  * Production - after review and approve allowed user, code can be deployed to production
+
 
 ## BP-Package 
 This repository can install custom package. 
