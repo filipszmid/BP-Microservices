@@ -1,0 +1,3 @@
+[submodule "BP-Templates"]
+	path = BP-Templates
+	url = git@github.com:Filip-231/BP-Templates.git
