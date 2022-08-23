@@ -1,3 +1,7 @@
 [submodule "BP-Templates"]
 	path = BP-Templates
 	url = git@github.com:Filip-231/BP-Templates.git
+	
+[submodule "BP-Test-Django"]
+	path = BP-Test-Django
+	url = git@github.com:Filip-231/BP-Test-Django.git
