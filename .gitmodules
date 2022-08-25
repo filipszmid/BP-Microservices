@@ -6,6 +6,6 @@
 	path = BP-Test-Django
 	url = git@github.com:Filip-231/BP-Test-Django.git
 	
-[submodule "BP-Package"]
-	path = BP-Package
-	url = git@github.com:Filip-231/BP-Package.git
+[submodule "BP-Test-Package"]
+	path = BP-Test-Package
+	url = git@github.com:Filip-231/BP-Test-Package.git
