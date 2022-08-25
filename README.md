@@ -18,7 +18,7 @@ The workflow start from cloning **BP-Init** repository.
 ## BP-Init
 Clone **BP-Init** repository and name it as your new project should be named:
 ```
-git clone git@github.com:Filip-231/BP-Init.git BP-Django-Test 
+git clone git@github.com:Filip-231/BP-Init.git BP-Test-Django 
 ```
 
 
@@ -30,7 +30,7 @@ This repository is made to initialize new projects with several common usefully 
 
 Fill **_PROJECT** with a name of you new project, and **_USER** with the name of your Github user to reset git, specify new project and git user.
 ```
-make git _PROJECT=BP-Django-Test _USER=Filip-231 
+make git _PROJECT=BP-Test-Django _USER=Filip-231 
 ```
 Now the **BP-Init** repository is transformed to new repository named: abc-test.
 
@@ -48,11 +48,11 @@ make init LANGUAGE=django
 ```
 For technical purposes there is a need to add project name and username to .env file:
 ```
-make set-project-name _PROJECT=BP-Django-Test _USER=Filip-231
+make set-project-name _PROJECT=BP-Test-Django _USER=Filip-231
 
 ```
 
-Commit everything to a new repository (BP-Django-Test) what you just created:
+Commit everything to a new repository (BP-Test-Django) what you just created:
 ```
 make all
 ```
