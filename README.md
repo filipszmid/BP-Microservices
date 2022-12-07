@@ -4,7 +4,8 @@ The main conception is systematizing process of creation new repositories.
 
 Here you can find several repositories from which the whole process is build.
 
-
+To add new module: `git submodule add git@github.com:Filip-231/BP-Test-Dbt.git BP-Test-Dbt
+`
 
 ## Prerehesitions
 You need to :
