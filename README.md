@@ -69,13 +69,15 @@ Don't forget to set up secrets: https://github.com/Filip-231/BP-Test-Django/sett
 
 To be able to deploy you need to configure the following environment variables:
 
-| **Variable**             | **Description**                                                 | **Example Value**                                                                          |
-| ------------------------ |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| DJANGO_SECRET_KEY           | Django secret key consisting multiple characters.               | a7g1no9a2dhcosard72(ale66u5pg4stf9#b97maiccou6sekk                                         |
-| TESTING_HOST_IP | Ip address of your linux instance                               | 192.168. 1.1                                                                               |
-| TESTING_SSH_PRIVATE_KEY | Privat ssh key which is needed to make ssh tunel.               |       -----BEGIN RSA PRIVATE KEY-----                                                                                     |
-| PRODUCTION_HOST_IP | Ip address of your linux instance                               | 192.168. 1.1                                                                               |
-| PRODUCTION_SSH_PRIVATE_KEY | Privat ssh key which is needed to make ssh tunel.               |      -----BEGIN RSA PRIVATE KEY-----                                                                                      |
+| **Variable**               | **Description**                                                                                      | **Example Value**                                  |
+|----------------------------|------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| DJANGO_SECRET_KEY          | Django secret key consisting multiple characters.                                                    | a7g1no9a2dhcosard72(ale66u5pg4stf9#b97maiccou6sekk |
+| TESTING_HOST_IP            | Ip address of your linux instance                                                                    | 192.168. 1.1                                       |
+| TESTING_SSH_PRIVATE_KEY    | Privat ssh key which is needed to make ssh tunel to testing instance.                                | -----BEGIN RSA PRIVATE KEY-----                    |
+| PRODUCTION_HOST_IP         | Ip address of your linux instance                                                                    | 192.168. 1.1                                       |
+| PRODUCTION_SSH_PRIVATE_KEY | Private ssh key which is needed to make ssh tunel to prod instance.                                  | -----BEGIN RSA PRIVATE KEY-----                    |
+| SSH_PRIVATE_KEY_TO_REPO    | This is ssh key of an instance which has access to private repositories it is generated with key-gen | -----BEGIN RSA PRIVATE KEY-----                    |
+| PERSONAL_ACCESS_TOKEN      | PAT - token used to get package image https://github.com/settings/tokens                             | ghp_ ........                                      |  
 
 I encourage You to make 2 separate environments for testing and production and pass there specific env vars.  
 
