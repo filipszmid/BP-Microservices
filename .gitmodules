@@ -2,14 +2,12 @@
 	path = BP-Templates
 	url = git@github.com:Filip-231/BP-Templates.git
 
-[submodule "BP-Test-Django-"]
-	path = BP-Test-Django
-	url = git@github.com:Filip-231/BP-Test-Django.git
-
-[submodule "BP-Test-Dbt-"]
-	path = BP-Test-Dbt
-	url = git@github.com:Filip-231/BP-Test-Dbt.git
-
-[submodule "BP-Test-Package-"]
+[submodule "BP-Test-Package"]
 	path = BP-Test-Package
 	url = git@github.com:Filip-231/BP-Test-Package.git
+[submodule "BP-Test-Django"]
+	path = BP-Test-Django
+	url = git@github.com:Filip-231/BP-Test-Django.git
+[submodule "BP-Test-Dbt"]
+	path = BP-Test-Dbt
+	url = git@github.com:Filip-231/BP-Test-Dbt.git
